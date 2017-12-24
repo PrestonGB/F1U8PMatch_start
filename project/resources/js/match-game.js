@@ -14,18 +14,13 @@ MatchGame.generateCardValues = function() {
   for (var i = 1; i <= 8; i++) {
     unplacedCards.push(i,i);
   };
-  console.log(unplacedCards);
-  console.log('fuckyou');
   var randomCards = [];
-  console.log(randomCards);
   while (unplacedCards.length > 0) {
-  var randomIndex = Math.floor(Math.random()*unplacedCards.length);
-  randomCards.push(unplacedCards[randomIndex]);
-  unplacedCards.splice(randomIndex, 1);
-  console.log(unplacedCards);
-  console.log(randomCards);
-  console.log('fuckyoutoo');
+    var randomIndex = Math.floor(Math.random()*unplacedCards.length);
+    randomCards.push(unplacedCards[randomIndex]);
+    unplacedCards.splice(randomIndex, 1);
   };
+  return randomCards;
 };
 
 /*
