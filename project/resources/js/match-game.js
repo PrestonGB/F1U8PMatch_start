@@ -29,6 +29,7 @@ MatchGame.generateCardValues = function() {
 */
 
 MatchGame.renderCards = function(cardValues, $game) {
+
 };
 
 /*
